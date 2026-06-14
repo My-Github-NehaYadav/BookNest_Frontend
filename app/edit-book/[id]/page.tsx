@@ -16,7 +16,7 @@ export default function EditBookPage() {
   useEffect(() => {
     const getBook = async () => {
       const res = await fetch(
-        `http://localhost:5001/api/books/${id}`
+        `https://booknest-backend-280o.onrender.com/api/books/${id}`
       );
 
       const data = await res.json();
@@ -32,7 +32,7 @@ export default function EditBookPage() {
   }, [id]);
 
   const updateBook = async () => {
-    await fetch(`http://localhost:5001/api/books/${id}`, {
+    await fetch(`https://booknest-backend-280o.onrender.com/api/books/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

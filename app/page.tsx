@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 async function getBooks() {
-  const res = await fetch("http://localhost:5001/api/books", {
+  const res = await fetch("https://booknest-backend-280o.onrender.com/api/books", {
     cache: "no-store",
   });
 

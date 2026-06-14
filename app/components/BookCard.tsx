@@ -6,7 +6,7 @@ export default function BookCard({ book }) {
 
 
   const deleteBook = async () => {
-    await fetch(`http://localhost:5001/api/books/${book._id}`, {
+    await fetch(`https://booknest-backend-280o.onrender.com/api/books/${book._id}`, {
       method: "DELETE",
     });
 
