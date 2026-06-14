@@ -1,8 +1,13 @@
 "use client";
 import Link from "next/link";
 
-
-export default function BookCard({ book }) {
+type book = {
+  _id: string;
+  title: string;
+  author: string;
+  price: number;
+};
+export default function BookCard({ book }: { book: Book }) {
 
 
   const deleteBook = async () => {
