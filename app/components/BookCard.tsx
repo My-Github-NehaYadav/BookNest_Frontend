@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-type book = {
+type Book = {
   _id: string;
   title: string;
   author: string;
