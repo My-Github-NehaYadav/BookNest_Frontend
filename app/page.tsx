@@ -9,7 +9,13 @@ async function getBooks() {
     cache: "no-store",
   });
 
-  return res.json();
+  // return res.json();
+  console.log("STATUS:", res.status);
+
+  const text = await res.text();
+  console.log(text);
+
+  return JSON.parse(text);
 }
 
 export default async function Home() {
