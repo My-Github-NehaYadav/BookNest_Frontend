@@ -32,9 +32,8 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/add-book">Add Book</Link>
+        <nav className="navbar">
+          <Link className="navLink" href="/">Home</Link>
         </nav>
 
         {children}
